@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './App.scss'
 import Navbar from './Components/Navbar.jsx'
-import Layout from './components/Layout.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import About from './Components/About.jsx'
 import Header from './Components/Header'
@@ -16,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<div>
+          <Route path='/' element={<div className='layout'>
             <Header/>
             <Links />
             <Projects/>
